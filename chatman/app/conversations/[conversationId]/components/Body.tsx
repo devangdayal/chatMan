@@ -27,7 +27,7 @@ const Body:React.FC<BodyProps> = ({
 
 
     return ( 
-    <div className="flex-1 overflow-y-auto">
+    <div className="flex-1 overflow-y-auto bg-slate-200">
         {messages.map((message, i) => (
             <MessageBox
             isLast={i === messages.length -1}

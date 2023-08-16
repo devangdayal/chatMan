@@ -52,7 +52,6 @@ const Form = () => {
         <div className="
             py-4 
             px-4 
-            bg-white 
             border-t 
             flex 
             items-center 
@@ -66,7 +65,14 @@ const Form = () => {
             onUpload={handleUpload}
             uploadPreset="oeh6hcu3"
             >
-                <HiPhoto size={30} className=" text-emerald-500" />
+                <HiPhoto size={30} className="
+                rounded-full 
+                p-1
+                text-sky-400
+                cursor-pointer 
+                hover:bg-neutral-300 
+                transition
+            "/>
             </CldUploadButton>
             <form onSubmit={handleSubmit(onSubmit)}
                 className="flex items-center gap-2 lg:gap-4 w-full"

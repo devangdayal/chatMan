@@ -29,9 +29,9 @@ const MessageBox: React.FC<MessageBoxProps> = ({
         .join(', ');
 
 
-    const container = clsx('flex gap-3 p-4', isOwn && 'justify-end');
+    const container = clsx('flex gap-3 p-4 ', isOwn && 'justify-end');
     const avatar = clsx(isOwn && 'order-2');
-    const body = clsx('flex flex-col gap-2', isOwn && 'items-end');
+    const body = clsx('flex flex-col gap-2 ', isOwn && 'items-end');
     const message = clsx(
         'text-sm w-fit overflow-hidden rounded-tr-lg',
         isOwn ? 'bg-sky-500 text-white' : 'bg-gray-100',
@@ -44,7 +44,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
                 <Avatar user={data.sender} />
             </div>
             <div className={body}>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 ">
                     <div className="text-sm text-gray-500">
                         {data.sender.name}
                     </div>
@@ -65,6 +65,10 @@ const MessageBox: React.FC<MessageBoxProps> = ({
                                 object-cover 
                                 cursor-pointer 
                                 hover:scale-110 
+                                bg-white
+                                rounded-md
+                                border-2
+                                py-2 px-4
                                 transition 
                                 translate
                             "

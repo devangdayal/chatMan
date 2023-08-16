@@ -35,7 +35,7 @@ const MessageInput: React.FC<MessageInputProps> = ({
           font-light
           py-2
           px-4
-          bg-neutral-100 
+          bg-gradient-to-r from-emerald-100 from-20% via-cyan-100 via-30% to-green-200 to-90%
           w-full 
           rounded-full
           focus:outline-none

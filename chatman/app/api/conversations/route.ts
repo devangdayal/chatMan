@@ -75,12 +75,12 @@ export async function POST(
             data: {
                 users:{
                     connect: [
-                    {
-                        id: currentUser.id
-                    },
-                    {
-                        id: userId
-                    }
+                        {
+                            id: currentUser.id
+                        },
+                        {
+                            id: userId
+                        }
                     ]
                 }
             },
